@@ -1,0 +1,41 @@
+body{
+    background-image: url("../img/bg.jpg") ;
+
+
+
+}
+
+footer{
+    background-color: #555;
+    background-image: url("../img/navbar_image.jpg");
+    color: white;
+    padding: 15px;
+}
+.navbar{
+
+    background-image: url("../img/navbar_image.jpg");
+}
+p.redtxt{
+    color: red;
+}
+#float{
+    position: relative;
+    -webkit-animation: floatBubble 2s infinite;
+    -webkit-animation-direction:alternate;
+}
+
+
+@-webkit-keyframes floatBubble{
+    from{
+        top:0;
+        -webkit-animation-timing-function: ease-in;
+
+    }
+
+
+    to {
+        top: 200px;
+        -webkit-animation-timing-function: ease-out;
+    }
+
+}

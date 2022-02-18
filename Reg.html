@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><img src="img/Logo.jpg" alt="logo" height=140% ></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="#">Registration</a></li>
+                <li><a href="animation.html">Animation</a></li>
+
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid text-center">
+    <div class="row content">
+        <div class="col-sm-2 sidenav">
+            <p><a href="index.html">Home</a></p>
+            <p><a href="#">Registration</a></p>
+            <p><a href="animation.html">Animation</a></p>
+        </div>
+        <div class="col-sm-8 text-left">
+
+            <h1>Registration Page</h1>
+            <p class="redtxt"> * Mark fields that are required</p>
+            <form method="post">
+                <label for="userName">User Name:*</label></br>
+                <input id="userName" type="text" name="userName" required="required"></br>
+                <label for="password">Password:*</label></br>
+                <input id="password" type="password" name="password" required="required"></br>
+                <label for="passwordv">Re-Type Password:*</label></br>
+                <input id="passwordv" type="password" name="password" required="required"></br>
+                <label for="firstName">First Name:*</label></br>
+                <input id="firstName" type="text" name="firstName" required="required"></br>
+                <label for="lastName">Last Name*:</label></br>
+                <input id="lastName" type="text" name="lastName" required="required"></br>
+                <label for="add1">Address line 1:*</label></br>
+                <input id="add1" type="text" name="add1" required="required"></br>
+                <label for="add2">Address line 2:</label></br>
+                <input id="add2" type="text" name="add2"></br>
+                <label for="city">City:*</label></br>
+                <input id="city" type="text" name="city" required="required"></br>
+                <label for="state">State:*</label></br>
+
+                <select id="state" name="state" required="required" >
+                    <option value="" selected="selected" hidden="hidden" disabled="disabled">Please select</option>
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA">California</option>
+                    <option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="DE">Delaware</option>
+                    <option value="DC">District Of Columbia</option>
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option>
+                    <option value="IA">Iowa</option>
+                    <option value="KS">Kansas</option>
+                    <option value="KY">Kentucky</option>
+                    <option value="LA">Louisiana</option>
+                    <option value="ME">Maine</option>
+                    <option value="MD">Maryland</option>
+                    <option value="MA">Massachusetts</option>
+                    <option value="MI">Michigan</option>
+                    <option value="MN">Minnesota</option>
+                    <option value="MS">Mississippi</option>
+                    <option value="MO">Missouri</option>
+                    <option value="MT">Montana</option>
+                    <option value="NE">Nebraska</option>
+                    <option value="NV">Nevada</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="NM">New Mexico</option>
+                    <option value="NY">New York</option>
+                    <option value="NC">North Carolina</option>
+                    <option value="ND">North Dakota</option>
+                    <option value="OH">Ohio</option>
+                    <option value="OK">Oklahoma</option>
+                    <option value="OR">Oregon</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="RI">Rhode Island</option>
+                    <option value="SC">South Carolina</option>
+                    <option value="SD">South Dakota</option>
+                    <option value="TN">Tennessee</option>
+                    <option value="TX">Texas</option>
+                    <option value="UT">Utah</option>
+                    <option value="VT">Vermont</option>
+                    <option value="VA">Virginia</option>
+                    <option value="WA">Washington</option>
+                    <option value="WV">West Virginia</option>
+                    <option value="WI">Wisconsin</option>
+                    <option value="WY">Wyoming</option>
+                </select></br>
+                <label for="zc">Zip Code:*</label></br>
+                <input id="zc" type="text" name="zc" required="required"></br>
+                <label for="phone">Phone Number:*</label></br>
+                <input id="phone" type="text" name="phone" required="required"></br>
+                <label for="email">E-mail Address:*</label></br>
+                <input id="email" type="email" name="email" required="required"></br>
+                <b>Gender*:</b></br>
+                <input type="radio" name="gender" required="required" id="maleGender" value="male"/><label for="maleGender">Male</label>
+                <input type="radio" name="gender" required="required" id="femaleGender" value="female"/><label for="femaleGender">Female</label></br>
+                <b>Marital Status:*</b></br>
+                <input type="radio" name="mstat" required="required" id="singlestat" value="single"/><label for="singlestat">Single</label>
+                <input type="radio" name="mstat" required="required" id="marriedstat" value="married"/><label for="marriedstat">Married</label>
+                <input type="radio" name="mstat" required="required" id="seperatedstat" value="seperated"/><label for="seperatedstat">Seperated</label>
+                <input type="radio" name="mstat" required="required" id="widowedstat" value="widowed"/><label for="widowedstat">Widowed</label></br>
+                <label for="bday">Date of Birth:*</label></br>
+                <input id="bday" type="date" name="bday" required="required"></br>
+                <input type="submit" value="Submit Data">
+                <input type="reset" value="Reset Data">
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<footer class="container-fluid text-left">
+    <p>Contact Info:</p>
+    <p>Seanml1690@gmail.com</p>
+    <p>(573)310-1259</p>
+</footer>
+</body>
+</html>
